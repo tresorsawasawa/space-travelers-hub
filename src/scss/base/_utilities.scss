@@ -12,3 +12,11 @@
 body {
   color: $dark-text-color;
 }
+
+a { text-decoration: none; }
+
+.flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

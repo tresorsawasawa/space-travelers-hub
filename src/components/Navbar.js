@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-​
+
 const Navbar = () => {
   const links = [
     {
@@ -19,7 +19,7 @@ const Navbar = () => {
       text: 'My Profile',
     },
   ];
-​
+
   return (
     <nav className="nav-container">
       <ul className="nav-links flex-center-center">
@@ -32,5 +32,5 @@ const Navbar = () => {
     </nav>
   );
 };
-​
+
 export default Navbar;
