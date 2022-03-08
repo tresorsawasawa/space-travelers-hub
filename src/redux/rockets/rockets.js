@@ -27,7 +27,6 @@ export const cancelBookingRocket = (id) => ({
 export const getRocketsDispatcher = () => async (dispatch) => {
   const rockets = await fetchRocketsApiData();
   dispatch(getRockets(rockets));
-  console.log(getRockets(rockets));
 };
 
 const rocketsReducer = (state = initialSate, action) => {
