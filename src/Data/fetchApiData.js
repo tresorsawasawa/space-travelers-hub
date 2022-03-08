@@ -7,13 +7,13 @@ const fetchRocketsApiData = async () => {
   const Rockets = [];
 
   getData.data.forEach((rocketItem) => {
-    const rocket = {};
     const firstImage = rocketItem.flickr_images[0];
-    rocket.id = rocketItem.id;
-    rocket.rocket_name = rocketItem.rocket_name;
-    rocket.description = rocketItem.description;
-    rocket.flickr_images = firstImage;
-    Rockets.push(rocket);
+    Rockets.push({
+      rocketId: rocketItem.id,
+      rocketName: rocketItem.rocket_name,
+      description: rocketItem.description,
+      rocketImage: firstImage,
+    });
   });
 
   return Rockets;
