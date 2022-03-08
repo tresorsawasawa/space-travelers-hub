@@ -1,0 +1,23 @@
+@import './variables';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    .app-logo {
+      width: 2.3rem;
+      height: 2.3rem;
+    }
+  }
+
+  .nav-container {
+    .nav-links {
+      .nav-item { margin-left: 1rem; }
+    }
+  }
+
+  a.active-link {
+    text-decoration: underline;
+  }
+}

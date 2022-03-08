@@ -1,0 +1,22 @@
+@import './variables';
+
+::after,
+::before,
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  color: $dark-text-color;
+}
+
+a { text-decoration: none; }
+
+.flex-center-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
