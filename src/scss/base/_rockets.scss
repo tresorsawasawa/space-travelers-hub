@@ -1,3 +1,5 @@
+@import './variables';
+
 .rockets {
   margin-top: 2rem;
 
@@ -17,7 +19,24 @@
           padding-left: 1.5rem;
 
           .description {
+            display: block;
             padding: 1em 0;
+
+            .isReserved {
+              background-color: $blue-bg-isReserved;
+              color: $white-color;
+              border-radius: 4px;
+              padding: 0.1em 0.3em;
+              margin-right: 5px;
+            }
+          }
+
+          .reserve-btn {
+            color: $white-color;
+            background-color: $blue-bg-toReserve;
+            padding: 0.5rem 0.8rem;
+            border-radius: 0.2rem;
+            font-size: 1rem;
           }
         }
       }
