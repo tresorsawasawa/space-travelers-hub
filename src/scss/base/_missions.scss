@@ -1,9 +1,12 @@
 table {
   border: 2px solid #e8e8e8;
   border-collapse: collapse;
+  text-align: left;
 
-  td {
-    border: 2px solid #e8e8e8;;
+  td,
+  th {
+    border: 2px solid #e8e8e8;
+    padding: 1rem;
   }
 
   thead {
@@ -11,6 +14,7 @@ table {
       color: rgb(17, 17, 17);
       font-size: 24px;
       font-weight: 700;
+      text-align: left;
     }
   }
 
@@ -21,7 +25,18 @@ table {
       color: rgb(17, 17, 17);
       font-size: 24px;
       font-weight: 700;
-      text-align: start;
+    }
+
+    .td-3,
+    .td-4 {
+      width: 200px;
+      text-align: center;
+
+      button {
+        width: 150px;
+        margin: auto;
+        height: 30px;
+      }
     }
   }
 }

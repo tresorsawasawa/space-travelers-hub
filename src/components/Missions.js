@@ -17,7 +17,6 @@ const Missions = () => {
             <th>Mission</th>
             <th>Description</th>
             <th>Status</th>
-            <th>Join</th>
           </tr>
         </thead>
         <tbody>
@@ -25,8 +24,8 @@ const Missions = () => {
             <tr key={data.mission_id}>
               <td className="td-1">{data.mission_name}</td>
               <td className="td-2">{data.description}</td>
-              <td className="td-3">buttons</td>
-              <td className="td-4">buttons</td>
+              <td className="td-3"><button type="button">Not a member</button></td>
+              <td className="td-4"><button type="button">Join Mission</button></td>
             </tr>
           ))}
         </tbody>
