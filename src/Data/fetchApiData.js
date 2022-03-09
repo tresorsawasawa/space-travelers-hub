@@ -9,10 +9,10 @@ const fetchRocketsApiData = async () => {
   getData.data.forEach((rocketItem) => {
     const firstImage = rocketItem.flickr_images[0];
     Rockets.push({
-      rocketId: rocketItem.id,
-      rocketName: rocketItem.rocket_name,
+      id: rocketItem.id,
+      rocket_name: rocketItem.rocket_name,
       description: rocketItem.description,
-      rocketImage: firstImage,
+      image: firstImage,
     });
   });
 

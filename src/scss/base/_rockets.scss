@@ -1,0 +1,26 @@
+.rockets {
+  margin-top: 2rem;
+
+  .rockets-list {
+    .rocket-item {
+      height: 220px;
+
+      .rocket-container {
+        .image-container {
+          img {
+            height: 200px;
+            width: 240px;
+          }
+        }
+
+        .rocket-infos {
+          padding-left: 1.5rem;
+
+          .description {
+            padding: 1em 0;
+          }
+        }
+      }
+    }
+  }
+}
