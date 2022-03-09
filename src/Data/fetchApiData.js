@@ -13,6 +13,7 @@ const fetchRocketsApiData = async () => {
       rocket_name: rocketItem.rocket_name,
       description: rocketItem.description,
       image: firstImage,
+      reserved: false,
     });
   });
 
