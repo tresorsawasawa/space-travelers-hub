@@ -1,0 +1,27 @@
+table {
+  border: 2px solid #e8e8e8;
+  border-collapse: collapse;
+
+  td {
+    border: 2px solid #e8e8e8;;
+  }
+
+  thead {
+    th {
+      color: rgb(17, 17, 17);
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+
+  tbody {
+    tr:nth-child(odd){background-color: #f2f2f2;}
+
+    .td-1 {
+      color: rgb(17, 17, 17);
+      font-size: 24px;
+      font-weight: 700;
+      text-align: start;
+    }
+  }
+}

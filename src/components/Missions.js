@@ -1,24 +1,37 @@
-import { render } from '@testing-library/react';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getFromApi } from '../redux/missions/missions';
+import { fetchMissions } from '../redux/missions/missions';
 
 const Missions = () => {
-  const missions = useSelector((state) => state.missionsReducer);
+  const missions = useSelector((state) => state.missionsReducer.missions);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getFromApi());
+    dispatch(fetchMissions());
   }, []);
 
-  render(
+  return (
     <div className="clm-row">
-      {missions.map((data) => (
-        <div className="mission-row" key={data.itemId}>
-          <h3>{data.name}</h3>
-          <p>{data.description}</p>
-        </div>
-      ))}
-    </div>,
+      <table>
+        <thead>
+          <tr>
+            <th>Mission</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Join</th>
+          </tr>
+        </thead>
+        <tbody>
+          {missions.map((data) => (
+            <tr key={data.mission_id}>
+              <td className="td-1">{data.mission_name}</td>
+              <td className="td-2">{data.description}</td>
+              <td className="td-3">buttons</td>
+              <td className="td-4">buttons</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 };
 
