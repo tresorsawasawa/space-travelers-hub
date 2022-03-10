@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![math-magicians](./src/images/Space_Travelers_Hub.png)
 ## Description
 
-> "Space-Travelers-Hub" is a website that  allow users to book rockets and join selected space missions by using data from the SpaceX API.
+> "Space-Travelers-Hub" is a website that allows users to book rockets and join selected space missions by using data from the SpaceX API.
 ## Built With
 
 This project is built with:
