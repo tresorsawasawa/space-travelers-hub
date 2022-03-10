@@ -28,26 +28,22 @@ const Rocket = ({
           {reserved && <span className="isReserved">Reserved</span>}
           {description}
         </p>
-        {!reserved && (
-          <button
-            type="button"
-            id={id}
-            className="reserve-btn clickable"
-            onClick={bookingRocket}
-          >
-            Reserve Rocket
-          </button>
-        )}
-        {reserved && (
-          <button
-            type="button"
-            id={id}
-            className="cancel-reserv-btn clickable"
-            onClick={cancelReservation}
-          >
-            Cancel Reservation
-          </button>
-        )}
+        <button
+          type="button"
+          id={id}
+          className="reserve-btn clickable"
+          onClick={bookingRocket}
+        >
+          Reserve Rocket
+        </button>
+        <button
+          type="button"
+          id={id}
+          className="cancel-reserv-btn clickable"
+          onClick={cancelReservation}
+        >
+          Cancel Reservation
+        </button>
       </div>
     </div>
   );
