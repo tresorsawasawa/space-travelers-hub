@@ -6,7 +6,7 @@ table {
   td,
   th {
     border: 2px solid #e8e8e8;
-    padding: 1rem;
+    padding: 0.7rem;
   }
 
   thead {
@@ -32,10 +32,23 @@ table {
       width: 200px;
       text-align: center;
 
+      span {
+        background-color: #6d757d;
+        color: #fff;
+        font-weight: 700;
+        padding: 6px;
+        border-radius: 7px;
+      }
+
       button {
-        width: 150px;
+        width: 170px;
         margin: auto;
-        height: 30px;
+        height: 45px;
+        font-size: 20px;
+        border: 2px solid #1f1f1f;
+        border-radius: 5px;
+        color: #1f1f1f;
+        background-color: transparent;
       }
     }
   }
