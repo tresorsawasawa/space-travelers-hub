@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { bookRocket } from '../redux/rockets/rockets';
+import { bookRocket, cancelRocketBooking } from '../redux/rockets/rockets';
 
 const Rocket = ({
   id, description, name, image, reserved,
@@ -12,7 +12,9 @@ const Rocket = ({
     dispatch(bookRocket(+id));
   };
 
-  const cancelReservation = () => {
+  const cancelReservation = (e) => {
+    const { id } = e.target;
+    dispatch(cancelRocketBooking(+id));
     console.log(`${name} booking is canceled`);
   };
 
