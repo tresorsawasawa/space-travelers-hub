@@ -37,18 +37,6 @@ exports[`Test if Rocket render correctly 1`] = `
 </div>
 `;
 
-exports[`Test if Rockets List renders correctly 1`] = `
-<section>
-  <div
-    className="rockets"
-  >
-    <ul
-      className="rockets-list"
-    />
-  </div>
-</section>
-`;
-
 exports[`Test if Rockets renders correctly 1`] = `
 <section>
   <div
@@ -59,41 +47,4 @@ exports[`Test if Rockets renders correctly 1`] = `
     />
   </div>
 </section>
-`;
-
-exports[`Test if rockets render correctly 1`] = `
-<div
-  className="rocket-container flex-center-center"
->
-  <div
-    className="image-container"
-  >
-    <img
-      alt="Rocket"
-      src="https://test.com"
-    />
-  </div>
-  <div
-    className="rocket-infos"
-  >
-    <h3
-      className="rocket-name"
-    >
-      Rocket
-    </h3>
-    <p
-      className="description"
-    >
-      This is the Falcon1 Rocket
-    </p>
-    <button
-      className="reserve-btn clickable"
-      id={1}
-      onClick={[Function]}
-      type="button"
-    >
-      Reserve Rocket
-    </button>
-  </div>
-</div>
 `;
