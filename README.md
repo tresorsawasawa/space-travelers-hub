@@ -78,7 +78,7 @@ For tracking linter errors locally you need to follow these steps:
 
 ## :handshake: Contributing
 
-Feel free to check the [issues page](https://github.com/tresorsawasawa/Bookstore/issues)
+Feel free to check the [issues page](https://github.com/tresorsawasawa/space-travelers-hub/issues)
 
 ## Show your support
 
