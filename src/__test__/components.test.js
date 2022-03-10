@@ -9,7 +9,7 @@ it('Test if Rocket render correctly', () => {
   const rocket = {
     id: 1,
     description: 'This is the Falcon1 Rocket',
-    image: 'https://test.com',
+    image: 'https://imgur.com/DaCfMsj.jpg',
     name: 'Rocket',
     reserved: false,
   };
