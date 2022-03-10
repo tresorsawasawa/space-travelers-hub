@@ -42,7 +42,7 @@ const Rocket = ({
           <button
             type="button"
             id={id}
-            className="cancel-reservation-btn clickable"
+            className="cancel-reserv-btn clickable"
             onClick={cancelReservation}
           >
             Cancel Reservation
