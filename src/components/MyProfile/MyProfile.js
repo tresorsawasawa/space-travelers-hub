@@ -8,7 +8,7 @@ const MyProfile = () => {
   return (
     <section className="profile-section">
       <div className="rockets-profile-container">
-        <h1>My Rockets</h1>
+        <h1 style={{ paddingBottom: '0.3rem' }}>My Rockets</h1>
         <div className="reserv-rockets">
           <ul className="reserv-rockets-list">
             {reservedRockets.length === 0 ? (

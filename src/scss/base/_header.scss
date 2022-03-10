@@ -3,21 +3,37 @@
 .header {
   display: flex;
   justify-content: space-between;
+  padding: 1.3rem 0;
+  border-bottom: 1px solid $gray-txt-color;
 
   .logo {
     .app-logo {
-      width: 2.3rem;
-      height: 2.3rem;
+      width: 3rem;
+      height: 3rem;
+    }
+
+    .title {
+      padding-left: 0.6rem;
+      font-size: 1.8rem;
     }
   }
 
   .nav-container {
     .nav-links {
-      .nav-item { margin-left: 1rem; }
+      .nav-item {
+        margin-left: 1rem;
+        padding-right: 1.4rem;
+      }
     }
-  }
 
-  a.active-link {
-    text-decoration: underline;
+    a {
+      font-size: 1.2rem;
+      color: $blue-bg-toReserve;
+      font-weight: 600;
+    }
+
+    a.active-link {
+      border-bottom: 2.5px solid $blue-bg-toReserve;
+    }
   }
 }
