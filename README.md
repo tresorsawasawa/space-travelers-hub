@@ -87,7 +87,6 @@ Give a :star: if you like this project!
 ## Acknowledgments
 
 - Thanks to everyone who will get time to check this code especially to code reviewers.
-- Thanks [Zeplin](https://app.zeplin.io/project/5b35a9e13227086040f8eb75/screen/5b695e29bb8c844f118f9378) for the template design.
 
 ## 📝 License
 
