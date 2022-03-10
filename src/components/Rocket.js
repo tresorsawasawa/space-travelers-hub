@@ -15,7 +15,6 @@ const Rocket = ({
   const cancelReservation = (e) => {
     const { id } = e.target;
     dispatch(cancelRocketBooking(+id));
-    console.log(`${name} booking is canceled`);
   };
 
   return (
