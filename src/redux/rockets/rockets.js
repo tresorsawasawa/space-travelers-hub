@@ -2,6 +2,7 @@ import fetchRocketsApiData from '../../Data/fetchApiData';
 import {
   GET_ROCKETS,
   BOOKING_ROCKET,
+  CANCEL_ROCKET_BOOKING,
 } from './rocketsActions';
 
 const initialSate = {
@@ -14,6 +15,11 @@ export const getRockets = (data) => ({
 });
 
 export const bookRocket = (id) => ({
+  type: BOOKING_ROCKET,
+  payload: id,
+});
+
+export const cancelRocketBooking = (id) => ({
   type: BOOKING_ROCKET,
   payload: id,
 });
@@ -39,6 +45,19 @@ const rocketsReducer = (state = initialSate, action) => {
         data: state.data.map((rocket) => {
           const reserved = rocket.id === action.payload
             ? { ...rocket, reserved: true }
+            : { ...rocket };
+
+          return reserved;
+        }),
+      };
+
+    case CANCEL_ROCKET_BOOKING:
+      return {
+        ...state,
+        isDataStored: true,
+        data: state.data.map((rocket) => {
+          const reserved = rocket.id === action.payload
+            ? { ...rocket, reserved: false }
             : { ...rocket };
 
           return reserved;
