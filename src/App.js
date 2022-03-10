@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import Header from './components/Header';
-import Rockets from './components/Rockets';
+import Header from './components/Header/Header';
+import Rockets from './components/Rockets/Rockets';
 import Missions from './components/Missions';
-import MyProfile from './components/MyProfile';
+import MyProfile from './components/MyProfile/MyProfile';
 import store from './redux/configureStore';
 
 const App = () => (
