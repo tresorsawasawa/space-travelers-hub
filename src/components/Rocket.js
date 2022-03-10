@@ -12,6 +12,10 @@ const Rocket = ({
     dispatch(bookRocket(+id));
   };
 
+  const cancelReservation = () => {
+    console.log(`${name} booking is canceled`);
+  };
+
   return (
     <div className="rocket-container flex-center-center">
       <div className="image-container">
@@ -20,7 +24,7 @@ const Rocket = ({
       <div className="rocket-infos">
         <h3 className="rocket-name">{name}</h3>
         <p className="description">
-          {reserved && (<span className="isReserved">Reserved</span>)}
+          {reserved && <span className="isReserved">Reserved</span>}
           {description}
         </p>
         {!reserved && (
@@ -31,6 +35,16 @@ const Rocket = ({
             onClick={bookingRocket}
           >
             Reserve Rocket
+          </button>
+        )}
+        {reserved && (
+          <button
+            type="button"
+            id={id}
+            className="cancel-reservation-btn clickable"
+            onClick={cancelReservation}
+          >
+            Cancel Reservation
           </button>
         )}
       </div>
