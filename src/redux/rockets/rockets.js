@@ -20,7 +20,7 @@ export const bookRocket = (id) => ({
 });
 
 export const cancelRocketBooking = (id) => ({
-  type: BOOKING_ROCKET,
+  type: CANCEL_ROCKET_BOOKING,
   payload: id,
 });
 
