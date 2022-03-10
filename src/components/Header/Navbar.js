@@ -21,7 +21,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="nav-container">
+    <nav className="nav-container flex-center-center">
       <ul className="nav-links flex-center-center">
         {links.map((link) => (
           <li key={link.id} className="nav-item">

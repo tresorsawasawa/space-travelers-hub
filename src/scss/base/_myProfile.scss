@@ -1,0 +1,42 @@
+@import './variables';
+
+.profile-section {
+  margin: 1rem auto;
+  padding-top: 0.6rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+
+  .rockets-profile-container {
+    width: 48%;
+
+    .reserv-rockets-list {
+      border: 1px solid $gray-txt-color;
+      border-radius: 0.25rem;
+
+      .reserved-rocket-item {
+        border-bottom: 1px solid $gray-txt-color;
+        padding: 0.9rem;
+
+        .name {
+          color: $gray-prim-color;
+        }
+      }
+
+      .reserved-rocket-item:last-child {
+        border-bottom: none;
+      }
+
+      .no-reserved-rocket {
+        padding: 0.5rem;
+        font-weight: bold;
+        margin: 0 auto;
+        color: $gray-prim-color;
+      }
+    }
+  }
+
+  .missions-profile-container {
+    width: 48%;
+  }
+}
