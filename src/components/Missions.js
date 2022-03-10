@@ -9,9 +9,8 @@ const Missions = () => {
     dispatch(fetchMissions());
   }, []);
 
-  const toggleMission = (id, mission) => {
-    const isUseJoined = mission.reserved ? dispatch(joinMission(id)) : null;
-    return isUseJoined;
+  const toggleMission = (id) => {
+    dispatch(joinMission(id));
   };
 
   return (
@@ -25,19 +24,19 @@ const Missions = () => {
           </tr>
         </thead>
         <tbody>
-          {missions.map(({
-            mission_id: id,
-            mission_name: name,
-            description,
-            reserved,
-          }) => (
-            <tr key={id}>
-              <td className="td-1">{name}</td>
-              <td className="td-2">{description}</td>
-              <td className="td-3"><span>{reserved ? 'Active memeber' : 'Not a member'}</span></td>
+          {missions.map((data) => (
+            <tr key={data.mission_id}>
+              <td className="td-1">{data.mission_name}</td>
+              <td className="td-2">{data.description}</td>
+              <td className="td-3"><span>Not a Member</span></td>
               <td className="td-4">
-                <button type="button" id={id} onClick={(e) => toggleMission(e.target.id)}>
-                  {reserved ? 'Leave Mission' : 'Join Mission'}
+                <button
+                  type="button"
+                  id={data.mission_id}
+                  onClick={(e) => toggleMission(e.target.id)}
+                  className={data.reserved ? 'LeaveMission' : 'JoinMission'}
+                >
+                  {data.reserved ? 'Leave Mission' : 'Join Mission'}
                 </button>
               </td>
             </tr>

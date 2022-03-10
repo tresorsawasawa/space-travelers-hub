@@ -28,7 +28,7 @@ const missionsReducer = (state = initialState, action) => {
       return {
         ...state,
         missions: state.missions.map((mission) => {
-          if (mission.mission.id === action.payload) {
+          if (mission.mission_id === action.payload) {
             return { ...mission, reserved: !mission.reserved };
           }
           return mission;
