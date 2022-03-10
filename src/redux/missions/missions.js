@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const GET_DATA = 'GET_DATA';
-const CHANGE_STATE = 'CHANGE_STATE';
+const JOIN_MISSION = 'JOIN_MISSION';
 
 const url = 'https://api.spacexdata.com/v3/missions';
 const initialState = {
@@ -13,8 +13,8 @@ const getMissions = (payload) => ({
   payload,
 });
 
-export const changeMission = (id) => ({
-  type: CHANGE_STATE,
+export const joinMission = (id) => ({
+  type: JOIN_MISSION,
   payload: id,
 });
 
@@ -24,13 +24,15 @@ const missionsReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_DATA:
       return { ...state, missions: action.payload };
-    case CHANGE_STATE:
-      return [...state.map((mission) => {
-        if (mission.mission_id === action.payload) {
-          return { mission, joined: !mission.joined };
-        }
-        return mission;
-      })];
+    case JOIN_MISSION:
+      return {
+        ...state.map((mission) => {
+          if (mission.mission_id === action.payload) {
+            return { ...mission, joined: !mission.joined };
+          }
+          return mission;
+        }),
+      };
     default:
       return state;
   }

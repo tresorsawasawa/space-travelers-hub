@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchMissions } from '../redux/missions/missions';
+import { fetchMissions, joinMission } from '../redux/missions/missions';
 
 const Missions = () => {
   const missions = useSelector((state) => state.missionsReducer.missions);
@@ -8,6 +8,11 @@ const Missions = () => {
   useEffect(() => {
     dispatch(fetchMissions());
   }, []);
+
+  const toggleMission = (id, mission) => {
+    const isUseJoined = mission.joined ? dispatch(joinMission(id)) : null;
+    return isUseJoined;
+  };
 
   return (
     <div className="clm-row">
