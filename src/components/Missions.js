@@ -28,7 +28,11 @@ const Missions = () => {
             <tr key={data.mission_id}>
               <td className="td-1">{data.mission_name}</td>
               <td className="td-2">{data.description}</td>
-              <td className="td-3"><span>Not a Member</span></td>
+              <td className="td-3">
+                <span className={data.reserved ? 'activeMember' : 'notMember'}>
+                  {data.reserved ? 'Active Member' : 'NOT A MEMBER'}
+                </span>
+              </td>
               <td className="td-4">
                 <button
                   type="button"
