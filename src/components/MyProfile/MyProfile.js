@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const MyProfile = () => {
-  const rockets = useSelector((state) => state.rocketsReducer.data);
+  const rockets = useSelector((state) => state.rocketsReducer.rockets);
   const reservedRockets = rockets || [];
 
   const missions = useSelector((state) => state.missionsReducer.missions)
@@ -16,7 +16,7 @@ const MyProfile = () => {
           <ul className="reserv-rockets-list">
             {reservedRockets.length === 0 ? (
               <li style={{ padding: '0.9rem' }}>
-                <span className="no-reserved-rocket">No Reserved Rocket</span>
+                <span className="no-reserved-rocket">No Rockets Reserved</span>
               </li>
             ) : (
               reservedRockets
