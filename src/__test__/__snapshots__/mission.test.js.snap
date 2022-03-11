@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missions Component renders 1`] = `
+<th>
+  Mission
+</th>
+`;
+
+exports[`Missions Component renders 2`] = `
+<th>
+  Description
+</th>
+`;
+
+exports[`Missions Component renders 3`] = `
+<th>
+  Status
+</th>
+`;
