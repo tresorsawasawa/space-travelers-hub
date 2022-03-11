@@ -5,10 +5,13 @@ const MyProfile = () => {
   const rockets = useSelector((state) => state.rocketsReducer.data);
   const reservedRockets = rockets || [];
 
+  const missions = useSelector((state) => state.missionsReducer.missions)
+    .filter(({ reserved }) => reserved === true);
+
   return (
     <section className="profile-section">
       <div className="rockets-profile-container">
-        <h1 style={{ paddingBottom: '0.3rem' }}>My Rockets</h1>
+        <h1 style={{ paddingBottom: '1rem' }}>My Rockets</h1>
         <div className="reserv-rockets">
           <ul className="reserv-rockets-list">
             {reservedRockets.length === 0 ? (
@@ -28,7 +31,16 @@ const MyProfile = () => {
         </div>
       </div>
       <div className="missions-profile-container">
-        <h1> Add The Missions profile here</h1>
+        <h1>My Missions</h1>
+        {missions.length === 0 ? (
+          <li>No Missions joined yet</li>
+        ) : (
+          missions.map((data) => (
+            <li key={data.mission_d}>
+              <span>{data.mission_name}</span>
+            </li>
+          ))
+        )}
       </div>
     </section>
   );
