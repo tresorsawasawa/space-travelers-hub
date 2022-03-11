@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const MyProfile = () => {
-  const rockets = useSelector((state) => state.rocketsReducer.data);
+  const rockets = useSelector((state) => state.rocketsReducer.rockets);
   const reservedRockets = rockets || [];
 
   const missions = useSelector((state) => state.missionsReducer.missions)
