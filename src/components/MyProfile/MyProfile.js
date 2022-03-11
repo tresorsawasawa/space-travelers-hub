@@ -17,7 +17,7 @@ const MyProfile = () => {
               </li>
             ) : (
               reservedRockets
-                .filter((rocket) => rocket.reserved === true)
+                .filter(({ reserved }) => reserved === true)
                 .map((rocket) => (
                   <li key={rocket.id} className="reserved-rocket-item">
                     <span className="name" style={{ paddingLeft: '0.4rem', fontWeight: 'bold' }}>{rocket.rocket_name}</span>
