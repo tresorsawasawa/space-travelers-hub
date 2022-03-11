@@ -36,7 +36,7 @@ const MyProfile = () => {
           <li>No Missions joined yet</li>
         ) : (
           missions.map((data) => (
-            <li key={data.mission_d}>
+            <li key={data.mission_id}>
               <span>{data.mission_name}</span>
             </li>
           ))
