@@ -64,13 +64,13 @@ For tracking linter errors locally you need to follow these steps:
 
 ## Authors
 
-👤 **Author_1**
+👤 **Trésor Sawasawa**
 
 - GitHub: [@tresorsawasawa](https://github.com/tresorsawasawa)
 - Twitter: [@tresorsawasawa](https://twitter.com/TresorSawasawa)
 - LinkedIn: [Trésor Sawasawa](https://www.linkedin.com/in/tresor-sawasawa/)
 
-👤 **Author_2**
+👤 **Kandy Peter**
 
 - GitHub: [Kandy-Peter](https://github.com/Kandy-Peter)
 - Twitter: [Kandy-Peter](https://twitter.com/peter_kandy)
