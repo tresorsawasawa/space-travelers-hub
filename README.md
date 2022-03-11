@@ -60,7 +60,7 @@ For tracking linter errors locally you need to follow these steps:
 
 - And For running some unit tests:
 
-  > `npm test .`
+  > `npm test`
 
 ## Authors
 
@@ -72,9 +72,9 @@ For tracking linter errors locally you need to follow these steps:
 
 👤 **Author_2**
 
-- GitHub: [@Author_2]()
-- Twitter: [@Author_2]()
-- LinkedIn: [Author_2]()
+- GitHub: [Kandy-Peter](https://github.com/Kandy-Peter)
+- Twitter: [Kandy-Peter](https://twitter.com/peter_kandy)
+- LinkedIn: [Kandi-Kamuntu](https://www.linkedin.com/in/kandi-peter-kamuntu/)
 
 ## :handshake: Contributing
 
