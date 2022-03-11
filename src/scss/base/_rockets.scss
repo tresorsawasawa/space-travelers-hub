@@ -8,6 +8,8 @@
       padding-bottom: 1.4rem;
 
       .rocket-container {
+        justify-content: start;
+
         .image-container {
           img {
             height: 200px;
@@ -45,9 +47,7 @@
             padding: 0.5rem 0.8rem;
             border-radius: 0.2rem;
             color: $gray-txt-color;
-            box-shadow:
-              1px 2px 2px $gray-txt-color,
-              -0.5px -1px 1px $gray-txt-color;
+            box-shadow: 1px 2px 2px $gray-txt-color, -0.5px -1px 1px $gray-txt-color;
           }
         }
       }
