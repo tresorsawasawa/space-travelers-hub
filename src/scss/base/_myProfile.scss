@@ -38,5 +38,17 @@
 
   .missions-profile-container {
     width: 48%;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    li {
+      border: 1px solid rgb(109, 109, 109);
+      border-radius: 0.25rem;
+      padding: 0.9rem;
+      font-weight: 700;
+      color: $gray-prim-color;
+    }
   }
 }
