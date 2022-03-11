@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import store from '../redux/configureStore';
-import Missions from '../components/Missions';
+import Missions from '../components/Mission/Missions';
 
 const Tree = () => (
   <Provider store={store}>

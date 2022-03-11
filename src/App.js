@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Header from './components/Header/Header';
 import Rockets from './components/Rockets/Rockets';
-import Missions from './components/Missions';
+import Missions from './components/Mission/Missions';
 import MyProfile from './components/MyProfile/MyProfile';
 import store from './redux/configureStore';
 
