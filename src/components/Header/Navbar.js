@@ -25,21 +25,29 @@ const Navbar = () => {
     setNavbarOpen((prev) => !prev);
   };
 
+  const closeMenu = () => {
+    setNavbarOpen(false);
+  };
+
   return (
     <nav className="nav-container flex-center-center">
-      <ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`, 'nav-links flex-center-center'}>
-        <button
-          type="button"
-          onClick={handleToggle}
-          className="clickable"
-        >
+      <ul
+        className={
+          (`menuNav ${navbarOpen ? ' showMenu' : ''}`,
+          'nav-links flex-center-center')
+        }
+      >
+        <button type="button" onClick={handleToggle} className="clickable">
           {navbarOpen ? 'Close' : 'Open'}
         </button>
         {links.map((link) => (
           <li key={link.id} className="nav-item">
             <NavLink
               to={link.path}
-              className={(navData) => (navData.isActive ? 'active-link' : 'none')}
+              className={(navData) =>
+                navData.isActive ? 'active-link' : 'none'
+              }
+              onClick={() => closeMenu()}
             >
               {link.text}
             </NavLink>
